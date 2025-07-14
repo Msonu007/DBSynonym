@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 8000 8501 6379
 
 # Start Redis, FastAPI, and Streamlit
-CMD bash -c "redis-server --daemonize yes && uvicorn main:app --host 0.0.0.0 --port 8000 & streamlit run streamlit_app.py --server.port 8501"
+CMD bash -c "redis-server --daemonize yes && uvicorn main:app --host 0.0.0.0 --port 8000 & streamlit run frontend.py --server.port 8501"

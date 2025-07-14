@@ -50,6 +50,8 @@ async def update_config(request: Request):
         f.write(f"CACHE_BACKEND={cache_backend}\n")
         f.write(f"CACHE_TTL_SECONDS={ttl}\n")
         f.write(f"REDIS_URL={redis_url}\n")
+    os.environ["CACHE_BACKEND"] = cache_backend
+    os.environ["CACHE_TTL_SECONDS"] = str(ttl)
 
     response = JSONResponse({"status": "updated, restarting..."})
 
