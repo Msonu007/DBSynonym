@@ -34,9 +34,7 @@ A FastAPI backend and Streamlit frontend for managing and viewing synonym tables
 
 2. **Access the frontend:**
    Open [http://localhost:8501](http://localhost:8501) in your browser.
-
-3. **API direct access:**
-   Use [http://localhost:8000/docs](http://localhost:8000/docs) for interactive API docs.
+   
 
 ## Configuration
 
