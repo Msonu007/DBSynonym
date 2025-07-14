@@ -1,0 +1,9 @@
+fastapi[standard]
+uvicorn[standard]
+sqlmodel>=0.0.14
+redis[hiredis]
+pydantic-settings
+pydantic-core
+aiosqlite
+sqlalchemy~=2.0.41
+streamlit
