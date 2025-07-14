@@ -23,7 +23,6 @@ async def insert_data():
 
 @asynccontextmanager
 async def on_startup(app: FastAPI):
-    # Create tables if they don't exist (one‑time for PoC/dev)
 
     async with engine.begin() as conn:
         await conn.run_sync(SQLModel.metadata.create_all)
